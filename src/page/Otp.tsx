@@ -30,11 +30,13 @@ export const Otp = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
-        if (!res.valid) {
+        console.log(res.detail);
+        if (res.detail === "Invalid OTP") {
           navigate("/failed");
+        }else{
+          navigate(`/success?userid=${searchParams.get("userid")}&amount=${searchParams.get("amount")}&merchid=${searchParams.get("merchid")}`);
         }
-        navigate(`/success?userid=${searchParams.get("userid")}&amount=${searchParams.get("amount")}&merchid=${searchParams.get("merchid")}`);
+       
       });
   }
   return (
