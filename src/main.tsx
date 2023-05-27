@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import { Home } from "./page/Home";
 import { Otp } from "./page/Otp";
+import { Success } from "./page/Success";
+import { Failed } from "./page/Failed";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/otp",
         element: <Otp />,
+      },
+      {
+        path: "/success",
+        element: <Success />,
+      },
+      {
+        path: "/failed",
+        element: <Failed />,
       },
     ],
   },
