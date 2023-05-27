@@ -16,7 +16,7 @@ export const Otp = () => {
   }, [otp]);
 
   const verifyOtp = () => {
-    fetch("https://ux59x77neg.execute-api.ap-southeast-1.amazonaws.com/prod/verify", {
+    fetch("https://rjxh5ud0yh.execute-api.ap-southeast-1.amazonaws.com/dev/verify", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
