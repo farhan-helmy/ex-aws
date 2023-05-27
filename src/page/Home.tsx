@@ -9,6 +9,7 @@ export const Home = () => {
   const handleSendTAC = () => {
     fetch("https://rjxh5ud0yh.execute-api.ap-southeast-1.amazonaws.com/dev/otp", {
       method: "POST",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },

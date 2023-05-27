@@ -18,6 +18,7 @@ export const Otp = () => {
   const verifyOtp = () => {
     fetch("https://rjxh5ud0yh.execute-api.ap-southeast-1.amazonaws.com/dev/verify", {
       method: "POST",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
