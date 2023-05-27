@@ -7,9 +7,8 @@ export const Home = () => {
   const navigate = useNavigate();
 
   const handleSendTAC = () => {
-    fetch("https://rjxh5ud0yh.execute-api.ap-southeast-1.amazonaws.com/dev/otp", {
+    fetch("https://ux59x77neg.execute-api.ap-southeast-1.amazonaws.com/prod/otp", {
       method: "POST",
-      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
